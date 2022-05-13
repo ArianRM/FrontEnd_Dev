@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="form-title">FreeCodeCamp Survey Form</h1>
+        <p class="sub-title">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <form class="form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input class="input-text" type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="input-text" type="email" name="email" id="email" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age (optional)</label>
+            <input class="input-text" type="number" name="age" id="age" min="18" max="100">
+        </div>
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select name="dropdown" id="role" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+                <option value="full-time-learner">Full Time Learner</option>
+                <option value="prefer-not-to-say">Prefer Not to Say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label>
+                <input type="radio" name="user-recommend" class="input-radio" checked>
+                Definetly
+            </label>
+            <label>
+                <input type="radio" name="user-recommend" class="input-radio">
+                Maybe
+            </label>
+            <label>
+                <input type="radio" name="user-recommend" class="input-radio">
+                Not sure
+            </label>
+        </div>
+        <div class="form-group">
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select name="dropdown" id="role" required>
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label for="front"><input type="checkbox" name="front" id="front">Front-end Projects</label>
+            <label for="back"><input type="checkbox" name="back" id="back">Back-end Projects</label>
+            <label for="data"><input type="checkbox" name="data" id="data">Data Visualization</label>
+            <label for="challenges"><input type="checkbox" name="challenges" id="challenges">Challenges</label>
+            <label for="opens"><input type="checkbox" name="opens" id="opens">Open Source Community</label>
+            <label for="gitter"><input type="checkbox" name="gitter" id="gitter">Gitter help rooms</label>
+            <label for="videos"><input type="checkbox" name="videos" id="videos">Videos</label>
+            <label for="city"><input type="checkbox" name="city" id="city">City Meetups</label>
+            <label for="wiki"><input type="checkbox" name="wiki" id="wiki">Wiki</label>
+            <label for="forum"><input type="checkbox" name="forum" id="forum">Forum</label>
+            <label for="additional"><input type="checkbox" name="additional" id="additional">Additional Courses</label>
+        </div>
+        <div class="form-group">
+            <p>Any commments or suggestions?</p>
+            <textarea name="text-box" id="text-box" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Send">
+        </div>
+    </form>
+</body>
+</html>

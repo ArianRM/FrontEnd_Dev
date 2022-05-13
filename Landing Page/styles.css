@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background: rgb(51, 51, 51) url(https://static.pexels.com/photos/248515/pexels-photo-248515.png) center/cover no-repeat fixed;
+    height: 450px;
+    width: 100%;
+    z-index: -2;
+    opacity: 90%;
+    color: white;
+}
+
+.header-container{
+    font-size: 20px;
+    text-align: center;
+    margin: auto 0;
+    padding: 0 auto;
+    line-height: 2.5;
+}
+
+.header-subtitle{
+    font-size: 16px;
+    padding: 0 100px;
+}
+
+#button{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    padding-top: 10px; 
+    color: white;
+    background:#252525;
+    width: 200px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.web-dev{
+    height: 250px;
+    background: #eaeaea;
+}
+
+.web-dev_title{
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.web-text{
+    text-align: center;
+    padding: 0.5em 2em;
+    font-size: 20px;
+    column-count: 2;  
+    column-gap: 3em;  
+}
+
+.web-cards{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background:rgb(51, 51, 51);
+    padding: 2em 5em;
+    column-count: 3;  
+    column-gap: 1em;  
+}
+
+.card{
+    color: black;
+    background:white;
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card-contain{
+    text-align: center;
+    padding: 1.5em;
+    line-height: 1.5;
+}
+
+.card-contain h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.digital-text{
+    text-align: center;
+    margin-top: 5px;
+    padding: 1em 2em;
+    font-size: 20px;
+}
+
+.contact{
+    background: #2690d4;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 50px;
+}
+
+.about{
+    background: #333;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    column-count: 2;  
+    column-gap: 10em;
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color:white;
+    background: black;
+}
+
+.link{
+    color: #2690d4;
+}
