@@ -206,3 +206,78 @@ switch (day) {
         console.log("No es un día");
         break;
 }
+
+// Ciclos (Loops)
+let contador = 0;
+while (contador < 10) {
+    console.log("While " + contador);
+    contador++;
+}
+
+do {
+    console.log("do while " + contador);
+    contador++;
+} while (contador < 10);
+
+const num = [10,20,30,50,60,70];
+
+for (let i = 0; i < num.length; i++) {
+    console.log("for " + i);
+    console.log(num[i]);
+}
+
+const arian = {
+    nombre: "Arian",
+    apellido: "Ramirez",
+    edad: 19
+}
+for (const atributo in arian) {
+    console.log(`Key: ${atributo}, value: ${arian[atributo]}`);
+} // solo permite recorres los atributos de un objeto
+
+for (const elemento of num) {
+    console.log(elemento);
+}// permite recorrer todos los elemento de una estructura iterable
+
+let cadena = "Hola mundo me llamo ariancito y estoy confundido";
+
+for (const char of cadena) {
+    console.log(char);
+}
+
+// ***** MANEJO DE ERRORES
+
+try {
+    console.log("En el try se agrega el codigo a evaluar");
+    noExiste; // un error
+} catch (error) {
+    console.log("El catch captura cualquier error surgido en el try");
+}finally{
+    console.log("El bloque finally se ejecutara siempre al final de un bloque try-catch");
+}
+
+try {
+    let num = "y";
+    if (isNaN(num)) {
+        throw new Error("El caracter es malo");
+    }
+} catch (error) {
+    console.log(`hay un ${error}`);
+}
+
+// ***** BREAK - CONTINUE
+
+const nums = [1,2,3,4,5,6,7];
+for (let i = 0; i < nums.length; i++) {
+    if (i===5) {
+        break;
+    }
+    console.log(nums[i]);
+}
+
+for (let i = 0; i < nums.length; i++) {
+    if (i===5) {
+        continue;
+    }
+    console.log(nums[i]);
+}
