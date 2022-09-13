@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Combo', cursive;
+    color: black;
+    font-size: 2em;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url('https://www.xtrafondos.com/wallpapers/hexagonos-colores-pastel-7952.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin: 0.2em 0;
+}
+
+#counter{
+    font-size: 3em;
+}
+
+.buttons{
+    margin: 0.5em 0;
+}
+
+.buttons a{
+    padding: 0.2em 0.5em;
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: black;
+    border: 3px solid black;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.buttons a:hover{
+    transform: scale(1.2);
+    transition: all ease-out 200ms;
+}
