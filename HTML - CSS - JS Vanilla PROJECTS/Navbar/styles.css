@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background: rgb(187, 187, 187);
+}
+
+
+button{
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    transition: ease all 500ms;
+}
+
+button:hover{
+    transform: rotate(90deg);
+}
+
+.title-navbar{
+    font-size: 40px;
+    color: #276072;
+}
+
+.navbar{
+    padding: 10px 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
+}
+
+.mobile-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    
+}
+
+.links-navbar{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;  
+    align-items: center;
+}
+
+.links-navbar_visible{
+    display: none;
+    transition: all 0.3s linear;
+}
+
+.links-navbar li{
+    margin: auto 10px;
+}
+
+.links-navbar li a{
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.4em;
+    transition: ease all 200ms;
+}
+
+.icons-navbar{
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+
+    ul li{
+        list-style-type: none;
+        margin: 0 10px;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    button{
+        background: none;
+        border: none;
+        font-size: 1.4em;
+        display: none;
+    }
+    
+    .header{
+        width: 100%;
+        height: 500px;
+    }
+    
+    .navbar{
+        width: 100%;
+        height: 10%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
+    }
+    
+    .title-navbar{
+        font-size: 2em;
+        margin-top: 5px;
+        color: #276072;
+    }
+    
+    .links-navbar{
+        display: flex;
+        width: 500px;
+        flex-direction: row;
+        height: 1rem;
+    }
+
+    .links-navbar li{
+        margin: 0 20px;
+    }
+    
+    .icons-navbar{
+        display: flex;
+        margin-top: 5px;
+        font-size: 1.5em;
+    }
+
+    .icons-navbar li a i{
+        color: #276072;
+    }
+    .links-navbar li:hover{
+        color: #276072;
+        transform: scale(1.5);
+    }
+}
