@@ -21,8 +21,8 @@
     <strong>Project Time:</strong> Here I develop some projects for practice.
   </li>
 
-  <li>React.Js</li>
+  <li><strong>React.Js</strong></li>
 
-  <li>Node.Js</li>
+  <li><strong>Node.Js</strong></li>
 
   </ol>
