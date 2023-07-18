@@ -6,7 +6,7 @@
 
 <ol>
   <li>
-    HTML and CSS: It was easy in a way, I learned about all the semantics tags and the correct use of them. I learned about styles, pseudo-classes and some animations. I implemented BEM methodologies in the naming of the classes and id's of the tags
+    <strong>HTML and CSS:</strong> It was easy in a way, I learned about all the semantics tags and the correct use of them. I learned about styles, pseudo-classes and some animations. I implemented BEM methodologies in the naming of the classes and id's of the tags
   </li>
   
 </ol>
